@@ -4,31 +4,34 @@ class String
 
   def sentence?
   sentence_array = self.split
-    if sentence_array[-1][-1] == "."
-      true
-    else
-      false
-    end
+    # if sentence_array[-1][-1] == "."
+    #   true
+    # else
+    #   false
+    # end
+    self.end_with?(".")
 
   end
 
   def question?
-    sentence_array = self.split
-    if sentence_array[-1][-1] == "?"
-      true
-    else
-      false
-    end
+    # sentence_array = self.split
+    # if sentence_array[-1][-1] == "?"
+    #   true
+    # else
+    #   false
+    # end
+    self.end_with?("?")
 
   end
 
   def exclamation?
-    sentence_array = self.split
-    if sentence_array[-1][-1] == "!"
-      true
-    else
-      false
-    end
+    # sentence_array = self.split
+    # if sentence_array[-1][-1] == "!"
+    #   true
+    # else
+    #   false
+    # end
+    self.end_with?("!")
   end
 
 def count_sentences
